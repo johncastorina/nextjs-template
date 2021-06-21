@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  devapp:
+    environment: 
+      - local
+    build:
+      dockerfile: Dockerfile.dev
+      context: .
+    volumes:
+      - devapp/node_modules
+      - .:/devapp
+    stdin_open: true
+    container_name: devapp
+    restart: always
+    ports:
+      - "80:3000"    

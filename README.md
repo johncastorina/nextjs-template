@@ -1,34 +1,164 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# highspot-web NextJS Template
+### Get Started
 
-## Getting Started
+- Install: `yarn`
+- (If not) Run in terminal `yarn dev`
+- Navigate to https://localhost:3000
+- Check more about [Tailwind CSS](https://tailwindcss.com)
 
-First, run the development server:
+### Storybook
 
-```bash
-npm run dev
-# or
-yarn dev
+- `yarn storybook`
+
+### Cypress
+
+- `yarn cypress:open`
+
+### Docker
+
+Local development on port 80:
+- `yarn docker:dev`
+
+Local production build on port 80:
+- `yarn docker:prod`
+### Fully Coded Components
+
+Notus NextJS is built with over frontend 120 components, giving you the freedom of choosing and combining. All components can take variations in colors, that you can easily modify using Tailwind CSS classes 
+
+This project has TailwindCSS 2.2.x installed with Just In Time mode enabled. This means that all new classes being added during development time will automatically be built, including all classes with custom arbitrary values.
+
+You will save a lot of time going from prototyping to full-functional code, because all elements are implemented.
+This Free Tailwind CSS Template is coming with prebuilt examples, so the development process is seamless, switching from our pages to the real website is very easy to be done.
+
+Every element has multiple states for colors, styles, hover, focus, that you can easily access and use.
+
+
+### CSS Components
+
+120 Fully Coded CSS elements, such as [Alerts](https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-github-readme), [Buttons](https://www.creative-tim.com/learning-lab/tailwind/nextjs/buttons/notus?ref=nnjs-github-readme), [Inputs](https://www.creative-tim.com/learning-lab/tailwind/nextjs/inputs/notus?ref=nnjs-github-readme) and many more.
+
+Please [check all of them here](https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-github-readme).
+
+### NextJS Components
+
+We also feature the following dynamic components:
+- [Alerts](https://www.creative-tim.com/learning-lab/tailwind/nextjs/alerts/notus?ref=nnjs-github-readme)
+- [Popper for Menus](https://www.creative-tim.com/learning-lab/tailwind/nextjs/dropdowns/notus?ref=nnjs-github-readme)
+- [Menus](https://www.creative-tim.com/learning-lab/tailwind/nextjs/menus/notus?ref=nnjs-github-readme)
+- [Modals](https://www.creative-tim.com/learning-lab/tailwind/nextjs/modals/notus?ref=nnjs-github-readme)
+- [Navbars](https://www.creative-tim.com/learning-lab/tailwind/nextjs/navbar/notus?ref=nnjs-github-readme)
+- [Popper for popover content](https://www.creative-tim.com/learning-lab/tailwind/nextjs/popovers/notus?ref=nnjs-github-readme)
+- [Tabs](https://www.creative-tim.com/learning-lab/tailwind/nextjs/tabs/notus?ref=nnjs-github-readme)
+- [Popper for tooltips content](https://www.creative-tim.com/learning-lab/tailwind/nextjs/tooltips/notus?ref=nnjs-github-readme)
+
+
+## Table of Contents
+
+* [Files and folders](#files-and-folders)
+* [Browser Support](#browser-support)
+* [Resources](#resources)
+
+## Files and Folder
+Project Initial State
+```
+├── CHANGELOG.md
+├── ISSUE_TEMPLATE.md
+├── LICENSE.md
+├── README.md
+├── .storybook
+├── config
+│   ├── index.ts
+│   └── constants
+│   │   ├── index.ts
+│   │   └── SERVICES.ts
+├── src
+│   └──styles
+│   │   ├── index.css
+│   │   └── tailwind.css
+│   ├── @types
+│   ├── stories
+│   ├── services
+│   ├── components
+│   │   ├── Cards
+│   │   │   ├── CardBarChart.tsx
+│   │   │   ├── CardLineChart.tsx
+│   │   │   ├── CardPageVisits.tsx
+│   │   │   ├── CardProfile.tsx
+│   │   │   ├── CardSettings.tsx
+│   │   │   ├── CardSocialTraffic.tsx
+│   │   │   ├── CardStats.tsx
+│   │   │   └── CardTable.tsx
+│   │   ├── Dropdowns
+│   │   │   ├── IndexDropdown.tsx
+│   │   │   ├── NotificationDropdown.tsx
+│   │   │   ├── PagesDropdown.tsx
+│   │   │   ├── TableDropdown.tsx
+│   │   │   └── UserDropdown.tsx
+│   │   ├── Footers
+│   │   │   ├── Footer.tsx
+│   │   │   ├── FooterAdmin.tsx
+│   │   │   └── FooterSmall.tsx
+│   │   ├── Headers
+│   │   │   └── HeaderStats.tsx
+│   │   ├── Maps
+│   │   │   └── MapExample.tsx
+│   │   ├── Navbars
+│   │   │   ├── AdminNavbar.tsx
+│   │   │   ├── AuthNavbar.tsx
+│   │   │   └── IndexNavbar.tsx
+│   │   ├── PageChange
+│   │   │   └── PageChange.tsx
+│   │   └── Sidebar
+│   │       └── Sidebar.tsx
+│   ├── layouts
+│   │   ├── Admin.tsx
+│   │   └── Auth.tsx
+│   ├── pages
+│   │   ├── 404.tsx
+│   │   ├── _app.tsx
+│   │   ├── _document.tsx
+│   │   ├── _error.tsx
+│   │   ├── [user]
+│   │   │   └── profile.tsx
+│   │   ├── admin
+│   │   │   ├── dashboard.tsx
+│   │   │   ├── maps.tsx
+│   │   │   ├── settings.tsx
+│   │   │   └── tables.tsx
+│   │   ├── auth
+│   │   │   ├── login.tsx
+│   │   │   └── register.tsx
+│   │   ├── index.tsx
+│   │   └── landing.tsx
+├── public
+│   ├── img
+│   │   ├── brand
+│   │   │   └── favicon.ico
+│   │   ├── github.svg
+│   │   └── google.svg
+├── .gitignore
+├── .env.local
+├── .env.production
+├── package.json
+├── .eslintrc.js
+├── .nvmrc
+├── .prettierignore
+├── .prettierrc
+├── Dockerfile.dev
+├── Dockerfile.prod
+├── docker-compose.dev.yaml
+├── docker-compose.prod.yaml
+├── next-env.d.ts
+├── cypress.json
+├── tsconfig.json
+├── postcss.config.js
+└── tailwind.config.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Browser Support
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+At present, we officially aim to support the last two versions of the following browsers:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+| Chrome | Firefox | Edge | Safari | Opera |
+|:---:|:---:|:---:|:---:|:---:|
+| <img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/chrome-logo.png?raw=true" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/firefox-logo.png" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/edge-logo.png" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/safari-logo.png" width="64" height="64"> | <img src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/logos/opera-logo.png" width="64" height="64"> |

@@ -1,0 +1,13 @@
+FROM node:alpine
+
+WORKDIR /devapp
+
+COPY package.json yarn.lock ./
+
+# install dependencies
+RUN yarn install --frozen-lockfile
+
+COPY . .
+
+EXPOSE 3000
+CMD ["yarn", "dev"]
