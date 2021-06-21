@@ -1,8 +1,9 @@
 {
-  "name": "highspot-web",
+  "name": "nextjs-template",
   "homepage": "TODO",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "license": "MIT",
+  "author": "John Castorina",
   "description": "High Spot Web App Front End",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",

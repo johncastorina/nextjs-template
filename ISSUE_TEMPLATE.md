@@ -7,7 +7,7 @@
 -->
 
 <!--
-Love Creative Tim? Do you need Angular, React, Vuejs or HTML? You can visit:
+Love John Castorina? Do you need Angular, React, Vuejs or HTML? You can visit:
 👉  https://www.creative-tim.com/bundles?ref=nnjs-new-issue
 👉  https://www.creative-tim.com?ref=nnjs-new-issue
 -->

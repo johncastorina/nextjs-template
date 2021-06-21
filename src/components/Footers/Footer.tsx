@@ -130,13 +130,13 @@ export default function Footer() {
                 {' '}
                 {new Date().getFullYear()}
                 {' '}
-                HIGHSPOT WEB by
+                NextJS Template by
                 {' '}
                 <a
                   href="https://www.creative-tim.com?ref=nnjs-footer"
                   className="text-blueGray-500 hover:text-blueGray-800"
                 >
-                  Creative Tim
+                  John Castorina
                 </a>
                 .
               </div>

@@ -64,10 +64,10 @@ function MapExample() {
       position: myLatlng,
       map,
       animation: google.maps.Animation.DROP,
-      title: 'HIGHSPOT WEB!',
+      title: 'NextJS Template!',
     });
 
-    const contentString = '<div class="info-window-content"><h2>HIGHSPOT WEB</h2>'
+    const contentString = '<div class="info-window-content"><h2>NextJS Template</h2>'
       + '<p>A free Admin for Tailwind CSS, React, React Hooks, and NextJS.</p></div>';
 
     const infowindow = new google.maps.InfoWindow({

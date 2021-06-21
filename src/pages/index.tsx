@@ -14,10 +14,10 @@ export default function Index() {
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
               <h2 className="font-semibold text-4xl text-blueGray-600">
-                HIGHSPOT WEB - A beautiful extension for Tailwind CSS.
+                NextJS Template - A beautiful extension for Tailwind CSS.
               </h2>
               <p className="mt-4 text-lg leading-relaxed text-blueGray-500">
-                HIGHSPOT WEB is Free and Open Source. It does not change any of
+                NextJS Template is Free and Open Source. It does not change any of
                 the CSS from
                 {' '}
                 <a
@@ -125,7 +125,7 @@ export default function Index() {
                         CSS Components
                       </h6>
                       <p className="mb-4 text-blueGray-500">
-                        HIGHSPOT WEB comes with a huge number of Fully Coded CSS
+                        NextJS Template comes with a huge number of Fully Coded CSS
                         components.
                       </p>
                     </div>
@@ -168,7 +168,7 @@ export default function Index() {
                       </h6>
                       <p className="mb-4 text-blueGray-500">
                         Built by developers for developers. You will love how
-                        easy is to to work with HIGHSPOT WEB.
+                        easy is to to work with NextJS Template.
                       </p>
                     </div>
                   </div>
@@ -509,7 +509,7 @@ export default function Index() {
           <div className="w-full md:w-6/12 px-12 md:px-4">
             <h2 className="font-semibold text-4xl">Beautiful Example Pages</h2>
             <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500">
-              HIGHSPOT WEB is a completly new product built using our past
+              NextJS Template is a completly new product built using our past
               experience in web templates. Take the examples we made for you and
               start playing with them.
             </p>

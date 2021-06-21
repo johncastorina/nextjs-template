@@ -1,4 +1,4 @@
-# highspot-web NextJS Template
+#  NextJS Template
 ### Get Started
 
 - Install: `yarn`
