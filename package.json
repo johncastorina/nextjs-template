@@ -109,11 +109,8 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "eslint"
-    ],
-    "**/*": [
-      "pretty-quick — staged",
-      "git add"
+      "yarn lint",
+      "yarn lint:prettier --write"
     ]
   },
   "prettier": {
