@@ -6,6 +6,7 @@ import Head from 'next/head';
 import Router from 'next/router';
 
 import PageChange from 'components/PageChange/PageChange';
+import { SEO } from '../../config';
 
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'styles/tailwind.css';
@@ -45,7 +46,8 @@ export default class MyApp extends App {
 
     // @ts-ignore
     const Layout = Component.layout || (({ children }) => <>{children}</>);
-
+    // @ts-ignore
+    const pageTitle = Component.pageTitle || SEO.SITE_TITLE;
     return (
       <>
         <Head>
@@ -53,7 +55,7 @@ export default class MyApp extends App {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
-          <title>High Spot Web</title>
+          <title>{pageTitle}</title>
           <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE" />
         </Head>
         <Layout>

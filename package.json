@@ -1,31 +1,34 @@
 {
-  "name": "nextjs-template",
-  "homepage": "http://jcastorina-next-template.vercel.app/",
-  "version": "0.2.0",
+  "name": "highspot-web",
+  "homepage": "TODO",
+  "version": "0.1.0",
   "license": "MIT",
-  "author": "John Castorina",
-  "description": "NextJS + TailwindCSS + TypeScript Template",
+  "description": "High Spot Web App Front End",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.3",
     "@popperjs/core": "2.9.1",
     "@tailwindcss/forms": "^0.2.1",
+    "@types/ramda": "^0.27.40",
+    "axios": "^0.21.1",
     "chart.js": "^2.9.4",
-    "formik": "^2.2.9",    
+    "classnames": "^2.3.1",
+    "formik": "^2.2.9",
     "next": "^11.0.0",
     "prop-types": "^15.7.2",
     "ramda": "^0.27.1",
     "react": "^17.x",
     "react-dom": "^17.x",
     "react-query": "^3.17.2",
+    "react-query-devtools": "^2.6.3",
     "tailwindcss": "^2.2.2"
   },
   "scripts": {
     "start": "next start",
-    "build": "next build",
+    "build": "yarn tailwind:build && yarn next build",
     "dev": "concurrently \"yarn:tailwind:dev\" \"yarn:next dev\"",
     "build:tailwind": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
-    "tailwind:dev": "TAILWIND_MODE=watch postcss src/styles/index.css -o src/styles/tailwind.css --watch",
-    "tailwind:build": "postcss -i src/styles/index.css -o src/styles/tailwind.css",
+    "tailwind:dev": "cross-env TAILWIND_MODE=watch postcss src/styles/index.css -o src/styles/tailwind.css --watch",
+    "tailwind:build": "postcss src/styles/index.css -o src/styles/tailwind.css",
     "lint": "eslint --ignore-path .eslintignore \"**/*.{jsx,js,tsx}\" --fix",
     "lint:prettier": "pretty-quick",
     "style:all": "tsc && npm run style:lint && npm run style:prettier",
@@ -57,17 +60,18 @@
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
-    "@storybook/addon-actions": "^6.2.9",
-    "@storybook/addon-essentials": "^6.2.9",
-    "@storybook/addon-links": "^6.2.9",
+    "@storybook/addon-actions": "^6.3.0",
+    "@storybook/addon-essentials": "^6.3.0",
+    "@storybook/addon-links": "^6.3.0",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.2.9",
+    "@storybook/react": "^6.3.0",
+    "@types/axios": "^0.14.0",
     "@types/cypress": "^1.1.3",
     "@types/gulp": "^4.0.8",
     "@types/next": "^9.0.0",
+    "@types/node": "^15.12.4",
     "@types/prettier": "2.2.1",
     "@types/prop-types": "^15.7.3",
-    "@types/ramda": "^0.27.40",
     "@types/react": "^17.0.11",
     "@types/react-dom": "^17.0.8",
     "@types/react-query": "^1.2.9",
@@ -77,6 +81,7 @@
     "autoprefixer": "^10.2.6",
     "babel-loader": "^8.2.2",
     "concurrently": "^6.2.0",
+    "cross-env": "^7.0.3",
     "cypress": "^7.5.0",
     "eslint": "^7.29.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -94,8 +99,12 @@
     "postcss-cli": "^8.3.1",
     "postcss-loader": "^6.1.0",
     "prettier": "^2.2.1",
-    "storybook": "^6.2.9",
+    "storybook": "^6.3.0",
     "typescript": "^4.3.4"
+  },
+  "resolutions": {
+    "@typescript-eslint/eslint-plugin": "^4.4.0",
+    "@typescript-eslint/parser": "^4.4.0"
   },
   "husky": {
     "hooks": {
@@ -105,8 +114,7 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "yarn lint",
-      "yarn lint:prettier --write"
+      "yarn lint"
     ]
   },
   "prettier": {

@@ -33,6 +33,7 @@
     "styles": ["styles/*"],
     "pages": ["pages/*"],
     "config": ["../config/*"],
-    "@types": ["@types/*"]
+    "@types": ["@types/*"],
+    "@": ["."]
   }
 }
