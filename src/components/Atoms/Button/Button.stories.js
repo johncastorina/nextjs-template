@@ -11,45 +11,39 @@ export default {
   },
 };
 
-const Template = (args, { text }) => <Button {...args}>{text}</Button>;
+const Template = (args) => <Button {...args}>Button Component</Button>;
 
 export const PrimaryMedium = Template.bind({});
 PrimaryMedium.args = {
   variant: 'primary',
   size: 'medium',
-  text: 'Primary Button',
 };
 
 export const PrimaryLarge = Template.bind({});
 PrimaryLarge.args = {
   variant: 'primary',
   size: 'large',
-  text: 'Primary Button',
 };
 
 export const PrimaryExtraLarge = Template.bind({});
 PrimaryExtraLarge.args = {
   variant: 'primary',
   size: 'xlarge',
-  text: 'Primary Button',
 };
 
 export const SecondaryMedium = Template.bind({});
 SecondaryMedium.args = {
   variant: 'secondary',
-  text: 'Secondary Button',
 };
 
 export const SecondaryLarge = Template.bind({});
 SecondaryLarge.args = {
   variant: 'secondary',
   size: 'large',
-  text: 'Secondary Button',
 };
 
 export const SecondaryExtraLarge = Template.bind({});
 SecondaryExtraLarge.args = {
   variant: 'secondary',
   size: 'xlarge',
-  text: 'Secondary Button',
 };
