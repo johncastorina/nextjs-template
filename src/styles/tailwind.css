@@ -1719,10 +1719,6 @@ select {
 .text-55 {
 	font-size: 55rem;
 }
-.text-5xl {
-	font-size: 3rem;
-	line-height: 1;
-}
 .text-2xl {
 	font-size: 1.5rem;
 	line-height: 2rem;
@@ -1733,6 +1729,10 @@ select {
 }
 .text-6xl {
 	font-size: 3.75rem;
+	line-height: 1;
+}
+.text-5xl {
+	font-size: 3rem;
 	line-height: 1;
 }
 .font-semibold {

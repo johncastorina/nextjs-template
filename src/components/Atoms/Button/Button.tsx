@@ -6,7 +6,7 @@ export type ButtonType = 'button' | 'submit' | 'reset'
 export interface ButtonProps {
   variant?: string,
   size?: string,
-  classes?: string,
+  className?: string,
   children: React.ReactNode
   buttonType?: ButtonType,
   [x:string]: any
@@ -33,11 +33,11 @@ const getVariantClasses = (variant) => variantClasses[variant] || variantClasses
 const getSizeClasses = (size) => sizeClasses[size] || sizeClasses[defaultSize];
 
 export const Button: React.FC<ButtonProps> = ({
-  children, classes, variant, size, ...restProps
+  children, className, variant, size, ...restProps
 }) => {
   const { href, buttonType = 'button' } = restProps;
   const mergedClasses = classNames(
-    classes,
+    className,
     getVariantClasses(variant),
     getSizeClasses(size),
   );

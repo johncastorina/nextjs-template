@@ -5,6 +5,7 @@ import Link from 'next/link';
 
 import Navbar from 'components/Navbars/AuthNavbar';
 import Footer from 'components/Footers/Footer';
+import { Typography } from 'components/Atoms';
 
 export default function Landing() {
   return (
@@ -28,9 +29,9 @@ export default function Landing() {
             <div className="items-center flex flex-wrap">
               <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
                 <div className="pr-12">
-                  <h1 className="text-white font-semibold text-5xl">
+                  <Typography variant="h1" className="text-white">
                     Your story starts with us.
-                  </h1>
+                  </Typography>
                   <p className="mt-4 text-lg text-blueGray-200">
                     This is a simple example of a Landing Page you can build
                     using NextJS Template. It features multiple CSS components
@@ -265,7 +266,7 @@ export default function Landing() {
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center text-center mb-24">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold">Here are our heroes</h2>
+                <Typography variant="h2">Here are our heroes</Typography>
                 <p className="text-lg leading-relaxed m-4 text-blueGray-500">
                   According to the National Oceanic and Atmospheric
                   Administration, Ted, Scambos, NSIDClead scentist, puts the
@@ -442,9 +443,9 @@ export default function Landing() {
           <div className="container mx-auto px-4 lg:pt-24 lg:pb-64">
             <div className="flex flex-wrap text-center justify-center">
               <div className="w-full lg:w-6/12 px-4">
-                <h2 className="text-4xl font-semibold text-white">
+                <Typography variant="h2" className="text-white">
                   Build something
-                </h2>
+                </Typography>
                 <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-400">
                   Put the potentially record low maximum sea ice extent tihs
                   year down to low ice. According to the National Oceanic and

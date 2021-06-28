@@ -14,7 +14,6 @@ export default function Login() {
             <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-200 border-0">
               <div className="rounded-t mb-0 px-6 py-6">
                 <div className="text-center mb-3">
-                  <h2 className="text-white font-bold text-3xl hover:text-black">TEST</h2>
                   <h6 className="text-blueGray-500 text-sm font-bold">
                     Sign in with
                   </h6>

@@ -11,7 +11,37 @@ export default {
   },
 };
 
-const Template = (args, { text }) => <Typography {...args}>This is typography</Typography>;
+const Template = (args) => <Typography {...args}>This is typography</Typography>;
+
+export const Title = Template.bind({});
+Title.args = {
+  variant: 'h1',
+};
+
+export const Heading1 = Template.bind({});
+Heading1.args = {
+  variant: 'h1',
+};
+
+export const Heading2 = Template.bind({});
+Heading2.args = {
+  variant: 'h2',
+};
+
+export const Heading3 = Template.bind({});
+Heading3.args = {
+  variant: 'h3',
+};
+
+export const Heading4 = Template.bind({});
+Heading4.args = {
+  variant: 'h4',
+};
+
+export const Heading5 = Template.bind({});
+Heading5.args = {
+  variant: 'h5',
+};
 
 export const Paragraph = Template.bind({});
 Paragraph.args = {
@@ -26,29 +56,4 @@ Em.args = {
 export const Strong = Template.bind({});
 Strong.args = {
   variant: 'strong',
-};
-
-export const H1 = Template.bind({});
-H1.args = {
-  variant: 'h1',
-};
-
-export const H2 = Template.bind({});
-H2.args = {
-  variant: 'h2',
-};
-
-export const H3 = Template.bind({});
-H3.args = {
-  variant: 'h3',
-};
-
-export const H4 = Template.bind({});
-H4.args = {
-  variant: 'h4',
-};
-
-export const H5 = Template.bind({});
-H5.args = {
-  variant: 'h5',
 };

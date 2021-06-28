@@ -13,7 +13,7 @@ export type TVariant =
 
 export interface TypographyProps {
   variant: TVariant,
-  classes?: string,
+  className?: string,
   children: React.ReactNode
   [x:string]: any
 }
@@ -24,20 +24,20 @@ const variantClasses = {
   p: 'text-base mt-2',
   strong: 'font-bold',
   em: 'text-base',
-  h1: 'text-4xl font-bold',
-  h2: 'text-3xl font-bold',
-  h3: 'text-2xl font-bold',
-  h4: 'text-lg font-bold',
+  h1: 'text-5xl font-bold',
+  h2: 'text-4xl font-bold',
+  h3: 'text-3xl font-bold',
+  h4: 'text-2xl font-bold',
   h5: 'text-lg font-semibold',
 };
 
 const getVariantClasses = (variant) => variantClasses[variant];
 
 export const Typography: React.FC<TypographyProps> = ({
-  children, classes, variant, ...restProps
+  children, className, variant, ...restProps
 }) => {
   const mergedClasses = classNames(
-    classes,
+    className,
     commonClasses,
     getVariantClasses(variant),
   );
