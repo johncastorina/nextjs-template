@@ -7,7 +7,7 @@ import Navbar from 'components/Navbars/AuthNavbar';
 import Footer from 'components/Footers/Footer';
 import { Typography } from 'components/Atoms';
 
-export default function Landing() {
+export default function Landing(): JSX.Element {
   return (
     <>
       <Navbar />

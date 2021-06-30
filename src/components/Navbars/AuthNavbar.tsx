@@ -1,12 +1,22 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Link from 'next/link';
 
 import PagesDropdown from 'components/Dropdowns/PagesDropdown';
+import { Modal } from 'components/Modals/Modal';
+import { Button } from 'components/Atoms';
+
+// state
+import { IUIContext } from 'types/state';
+import { UIContext } from 'state';
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const { modal } = useContext(UIContext) as IUIContext;
+
+  const { open, setOpen } = modal;
   return (
     <>
+      <Modal />
       <nav className="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
@@ -18,6 +28,7 @@ export default function Navbar() {
                 HIGHSPOT DASHBOARD TEST
               </a>
             </Link>
+            <Button onClick={() => setOpen(!open)}>Modal</Button>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"

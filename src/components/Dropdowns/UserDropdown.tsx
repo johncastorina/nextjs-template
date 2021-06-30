@@ -1,7 +1,7 @@
 import React from 'react';
 import { createPopper } from '@popperjs/core';
 
-const UserDropdown = () => {
+const UserDropdown = (): JSX.Element => {
   // dropdown props
   const [dropdownPopoverShow, setDropdownPopoverShow] = React.useState(false);
   const btnDropdownRef = React.createRef();
@@ -49,7 +49,7 @@ const UserDropdown = () => {
       >
         {Array(4).fill('').map((i) => (
           <a
-            key={i}
+            key={`user-dropdown-${i}`}
             href="#pablo"
             className="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-blueGray-700"
             onClick={(e) => e.preventDefault()}

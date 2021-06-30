@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 
-export default function Footer() {
+export default function Footer(): JSX.Element {
   return (
     <>
       <footer className="relative bg-blueGray-200 pt-8 pb-6">
@@ -105,7 +105,7 @@ export default function Footer() {
                   </span>
                   <ul className="list-unstyled">
                     {Array(4).fill('').map((i) => (
-                      <li key={i}>
+                      <li key={`footer-${i}`}>
                         <a
                           className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                           href="#"
